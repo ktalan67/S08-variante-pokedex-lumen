@@ -98,3 +98,5 @@ $app->router->group([
 });
 
 return $app;
+
+//$app->put('user/{id}', 'UserController@update');

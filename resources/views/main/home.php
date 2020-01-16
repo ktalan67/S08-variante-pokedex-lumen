@@ -3,17 +3,17 @@
 //dump($pokemonList);
 ?>
 <!-- double liste déroulante pour préparer le combat pokémons -->
-<div class="FightList">
- <form method="post" action="action.php">
- <select name="Pokemon1">
+<div class="FightList-1">
+ <form method="post" action="#">
+ <select name="Pokemon-1">
     <option selected="selected">Pokemon 1</option>
     <?php foreach ($pokemonList as $pokemonCombat):?>
-      <option><?= $pokemonCombat->nom ?></option>
+      <option value="<? $pokemonCombat->id ?>"><?= $pokemonCombat->nom ?></option>
     <?php endforeach;?>
 </select>
 </form>
-
-<form method="post" action="combat">
+<div class="FightList-2">
+<form method="post" action="#">
  <select name="Pokemon2">
     <option selected="selected">Pokemon 2</option>
     <?php foreach ($pokemonList as $pokemonCombat):?>
