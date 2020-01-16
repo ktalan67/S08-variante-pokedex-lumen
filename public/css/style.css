@@ -1,0 +1,118 @@
+
+body{
+    font-family: 'Bree Serif', serif;
+    background-color: #c14040;
+}
+
+.contentNav{
+    display: flex;
+    justify-content: space-between;
+}
+.navigation{
+
+    border: 1px solid red;
+    border-radius: 1rem;
+    margin:1.5rem;
+    
+}
+
+.navbar-light .navbar-brand {
+    color: #c14040;
+    font-size: 1.5rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #c14040;
+    font-size: 1.2rem;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* img.card{
+    max-width: 200px;
+} */
+.card {
+    text-align: center;
+    margin:1rem;
+    border-radius: 20px;
+    width: 200px;
+    background-color: #982c2c;
+    padding:1.5rem;
+    color:white;
+    font-size: 1.5rem;
+}
+.col-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 31%;
+   
+}
+
+/* Style page produit*/
+main{
+    color:white;
+}
+.titreDetail{
+    text-align: center;
+}
+
+.type{
+    display: inline;
+   margin:1.2rem 1rem 2rem 0;
+   padding:0.2rem 0.5rem;
+   border-radius: 10px;
+}
+.fiche{
+    margin:2rem auto;
+    display: flex;
+    
+    
+}
+.stat{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+
+.txtFiche{
+    width: 600px;
+    background-color: #ab3838;
+    overflow:hidden;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.progress{
+    background-color: #632b2b;
+    width: 40%;
+    height: 1.1rem;
+}
+.progress-bar{
+    background-color: white;
+}
+p{
+color:white;
+
+}
+.listType{
+    color:white;
+    font-size: 1.5rem;
+    display:flex;
+    flex-wrap: wrap;
+}
+.titreType{
+    width:30%;
+    height: 6rem;
+    margin:0.6rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link{
+    color:white;
+}
