@@ -1,4 +1,5 @@
-<?php require(__DIR__ . '/../layout/header.php') ?>
+<?php include(__DIR__ . '/../layout/header.php') ?>
+
 <?php
 //dump($pokemonList);
 ?>
@@ -23,20 +24,18 @@
 </select>
 </form>
 </div>
-<!-- script pour récupérer les selects et pouvoir utiliser le routing (voir view combat.tpl.php)-->
-
 
 <section>
     <div class="row container-fluid d-flex justify-content-center">
         <?php foreach ($pokemonList as $pokemon):?>
 
             <div class="card col-3" style="width: 18rem;">
-
-                    <p class="card-text"><?= "#".$pokemon->numero." ".$pokemon->nom?></p></a>
-                </div><!---->
-            </div><!---->
+            <a href="<?=url('pokemon/'.$pokemon->numero)?>">
+                <img src="<?= url('img/'.$pokemon->numero.'.png')?>" class="card-img-top" alt="...">
+                    <p class="card-text"><?= "#".$pokemon->numero." ".$pokemon->nom ?></p></a>
+                </div>
         <?php endforeach;?>
     </div>
 </section>
 
-<?php require(__DIR__ . '/../layout/footer.php') ?>
+<?php include(__DIR__ . '/../layout/footer.php') ?>

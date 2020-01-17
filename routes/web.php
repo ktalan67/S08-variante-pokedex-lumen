@@ -16,7 +16,7 @@ $router->get('/', [
 
 $router->get('/pokemon/{id:[0-9]+}', [
     "as" => "pokemon", 
-    "uses" => "MainController@pokemon"]);
+    "uses" => "PokemonController@pokemon"]);
 
 $router->get('/types', [
     "as" => "types", 
@@ -24,7 +24,7 @@ $router->get('/types', [
 
 $router->get('/type/{typeId:[0-9]+}', [
     "as" => "type", 
-    "uses" => "MainController:@type"]);
+    "uses" => "TypeController:@pokemon"]);
 
 $router->get('/combat', [
     "as" => "combat", 
