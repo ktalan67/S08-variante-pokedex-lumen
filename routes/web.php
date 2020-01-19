@@ -26,6 +26,10 @@ $router->get('/type/{id:[0-9]+}/pokemon', [
     "as" => "type", 
     "uses" => "TypeController@getPokemonsByType"]);
 
-$router->get('/combat', [
+$router->post('/pokemon/{id1:[0-9]+}', [
+    "as" => "combat",
+    "uses" => "UserController@combatPost"]);
+
+$router->get('/combat/{id1:[0-9]+}/{id2:[0-9]+}', [
     "as" => "combat", 
     "uses" => "MainController@combat"]);

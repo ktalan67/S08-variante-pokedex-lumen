@@ -83,4 +83,12 @@
             </div>
         </div>
     </div>
+    <div class="FightList">
+ <form method="post" action="<?= route("combat", ['id1' => $pokemon->numero, 'id2' => $pokemon->numero ])?>">
+ <select name="pokemon" id="pokemonfight">
+    <option selected="selected">Pokemon</option>
+      <option><?= $pokemon->nom ?></option>
+</select>
+<input type="submit" value="Combat !">
+</form>
 </main>
