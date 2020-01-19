@@ -16,7 +16,7 @@ class Pokemon extends Model {
     protected $defense_spe;
     protected $vitesse;
     protected $numero;
-
+    protected $primaryKey = 'numero';
 
     public function getId()
     {

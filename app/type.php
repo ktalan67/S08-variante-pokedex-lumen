@@ -11,7 +11,6 @@ protected $id;
 protected $name;
 protected $color;
 
-
     public function pokemons()
     {
     return $this->belongsToMany('App\Pokemon', 'pokemon_type', 'type_id', 'pokemon_numero');

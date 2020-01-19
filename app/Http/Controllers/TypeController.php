@@ -16,9 +16,9 @@ class TypeController extends Controller
     }
     public function getPokemonsByType($id)
     {
-        $typeId = Type::find($id);
+        $type = Type::find($id);
         return view('main/type', [
-            "typeId" => $typeId, 
+            "type" => $type, 
             ]);   
 }
 }

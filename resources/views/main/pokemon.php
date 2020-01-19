@@ -1,3 +1,4 @@
+<?php include(__DIR__ . '/../layouts/header.php') ?>
 <main> 
 <h1 class="titreDetail">Détail de <?=$pokemon->nom?></h1>
     <div class="row">
@@ -92,3 +93,4 @@
 <input type="submit" value="Combat !">
 </form>
 </main>
+<?php include(__DIR__ . '/../layouts/footer.php') ?>

@@ -1,4 +1,4 @@
-
+<?php include(__DIR__ . '/../layouts/header.php') ?>
 <p>Cliquez sur un type pour voir tous les pokemon de ce type</p>
 <div class="listType">
 <?php foreach ($typeList as $type):?>
@@ -6,3 +6,4 @@
 <?php endforeach?>
 </div>
 
+<?php include(__DIR__ . '/../layouts/footer.php') ?>

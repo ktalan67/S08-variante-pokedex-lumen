@@ -1,4 +1,4 @@
-
+<?php include(__DIR__ . '/../layouts/header.php') ?>
 <?php echo 'lol' ?>
 </main>
 <!--
@@ -8,7 +8,7 @@
         ex: Bulbizare id:1 , Herbizarre id:2 alors route = Pokedex/combat/1/2
             J'affiche ma page combat.tpl avec ces données.
       3) Intégration sur la view -->
-
+      <?php include(__DIR__ . '/../layouts/footer.php') ?>
 
 
 
