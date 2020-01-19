@@ -9,20 +9,12 @@ use Illuminate\Support\Facades\DB;
 
 class PokemonController extends Controller
 {
-    public function pokemon()
-    {
-        $pokemon = Pokemon::all();
-        return view('main/pokemon', [
-            'pokemon'  => $pokemon,
-            ]);
-    }
     
-public function type()
+    public function getPokemon($numero)
     {
-        Pokemon::type();
-        $pokemonList = Pokemon::find();
-        return view('main/type', [
-            "pokemonList" => $pokemonList, 
-            ]);
+        $pokemon = Pokemon::all()->firstWhere('numero', $numero);
+    return view('main/pokemon', [
+        'pokemon' => $pokemon, 
+        ]); 
     }
 }

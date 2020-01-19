@@ -36,21 +36,4 @@
             </div>
         </nav>
         <div>
-        <section class="type-list">
-                <form method="post">
-                <select name="Sujets" id="type-select" onchange="goToPage()" selected="First">    
-                <option value="First">Type</option> 
-                <?php foreach($allTypes as $allType): ?>
-                <option value="<?= route("type", ['id' => $allType->id]) ?>"> <?= $allType->name ?></option> 
-                <?php endforeach ?>
-                </select>
-                </form>
-            </section>
-<!-- script redirection -->
-            <script>
-                function goToPage(){
-                    var s = document.getElementById('type-select');
-                    window.location.href = s.options[s.selectedIndex].value;
-                }
-            </script>  
 </hearder>

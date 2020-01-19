@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\View;
+use App\Pokemon;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -14,17 +16,14 @@ class AppServiceProvider extends ServiceProvider
 
      public function boot()
      {
-        {
-            view()->composer('*', function($view){
-                $absoluteURL = str_replace('.', '-', $view->getName());
-                view()->share('absoluteURL', $absoluteURL);
-            });
-    
-        }
+        View::composer('*', function () {
+            $pokemonList = Pokemon::all();
+            view()->share('pokemonList', $pokemonList);
+        });
+
+
      }
-     
     public function register()
     {
-        //
     }
-}
+    }

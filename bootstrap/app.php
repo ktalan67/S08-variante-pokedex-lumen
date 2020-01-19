@@ -76,7 +76,7 @@ $app->singleton(
 |
 */
 
-// $app->register(App\Providers\AppServiceProvider::class);
+$app->register(App\Providers\AppServiceProvider::class);
 // $app->register(App\Providers\AuthServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
 
@@ -103,5 +103,10 @@ $app->router->group([
 });
 
     return $app;
+
+//todo finir dintegrer les layouts avc Blade ..
+// $app->get('/', function () use ($app) {
+//     return $app->make('view')->make('home');
+//     });
 
 //$app->put('user/{id}', 'UserController@update');

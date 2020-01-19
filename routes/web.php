@@ -14,20 +14,18 @@ $router->get('/', [
     "as" => "home", 
     "uses" => "MainController@home"]);
 
-$router->get('/pokemon/{id:[0-9]+}', [
+$router->get('/pokemon/{numero:[0-9]+}', [
     "as" => "pokemon", 
-    "uses" => "PokemonController@pokemon"]);
+    "uses" => "PokemonController@getPokemon"]);
 
 $router->get('/types', [
     "as" => "types", 
-    "uses" => "MainController@types"]);
+    "uses" => "TypeController@types"]);
 
-$router->get('/type/{typeId:[0-9]+}', [
+$router->get('/type/{id:[0-9]+}/pokemon', [
     "as" => "type", 
-    "uses" => "TypeController:@pokemon"]);
+    "uses" => "TypeController@getPokemonsByType"]);
 
 $router->get('/combat', [
     "as" => "combat", 
     "uses" => "MainController@combat"]);
-
-

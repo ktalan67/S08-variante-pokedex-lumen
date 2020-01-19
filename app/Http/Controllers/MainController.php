@@ -14,17 +14,18 @@ class MainController extends Controller
 {
     public function home()
     {
-        $pokemonList = Pokemon::all();
-        return view('main/home', [
-            "pokemonList" => $pokemonList, 
-            ]);
+        return view('main/home');
     }
-
-    public function types()
+    public function pokemon()
     {
-        $typeList = Type::all();
-        return view('main/types', [
-            "typeList" => $typeList, 
-            ]);   
+        return view('main/pokemon');
+    }
+    public function types()
+    { 
+        return view('main/types');
+    }
+    public function combat()
+    {
+        return view('main/combat');
     }
 }
